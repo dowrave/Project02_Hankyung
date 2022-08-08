@@ -5,6 +5,7 @@ CREATE TABLE reports(id INT NOT NULL AUTO_INCREMENT,
     company VARCHAR(40) NOT NULL,
     date DATE NOT NULL,
     written_by VARCHAR(20) NOT NULL,
+    reports_idx VARCHAR(20),
     PRIMARY KEY (id),
     );
 

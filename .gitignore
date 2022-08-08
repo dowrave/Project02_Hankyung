@@ -18,4 +18,5 @@ pip-selfcheck.json
 
 chromedriver.exe
 Trials/
+sql_info.py
 # End of https://www.toptal.com/developers/gitignore/api/venv
