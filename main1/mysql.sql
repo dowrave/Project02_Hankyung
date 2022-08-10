@@ -1,16 +1,15 @@
 -- 테이블 작성 쿼리 (실행 : MySQL 8.0 Command Line Client)
 
 -- 테이블 1 : reports (id, 상향 대상 기업명,보고서 올라온 날짜, 보고서를 쓴 증권사)
-CREATE TABLE reports(id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE reports(reports_idx VARCHAR(20),
     company VARCHAR(40) NOT NULL,
     date DATE NOT NULL,
     written_by VARCHAR(20) NOT NULL,
-    reports_idx VARCHAR(20),
-    PRIMARY KEY (id),
+    PRIMARY KEY (reports_idx),
     );
 
 -- 테이블 1 복붙 편한 버전
-CREATE TABLE reports(id INT NOT NULL AUTO_INCREMENT,company VARCHAR(40) NOT NULL,date DATE NOT NULL,written_by VARCHAR(20) NOT NULL,PRIMARY KEY (id)); 
+CREATE TABLE reports(reports_idx VARCHAR(20), company VARCHAR(40) NOT NULL, date DATE NOT NULL, written_by VARCHAR(20) NOT NULL,PRIMARY KEY (reports_idx)); 
 
 -- 테이블 2 : companies (기업명, 코드, 사업 분야)
 CREATE TABLE companies(
