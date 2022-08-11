@@ -28,7 +28,7 @@
 - [MySQL 커뮤니티 버전](https://dev.mysql.com/downloads/mysql/)
 - [크롬 드라이버](https://chromedriver.chromium.org/downloads)
 - 패키지는 `requirements.txt` 참조
-
+    - 메인 : `pandas`, `pymysql`, `matplotlib`, `seaborn`, `selenium`, `bs4`
 
 ### 기타 등등..
 - 프로젝트 진행 기간 : `220803 ~ 220811`
