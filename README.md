@@ -1,10 +1,12 @@
 # 한경 컨센서스 웹 스크래핑 & 조회
 
 ## 프로젝트 내용
+1. 데이터 수집(`main1/DataCollect.ipynb`)
 - [한경 컨센서스](http://hkconsensus.hankyung.com/apps.analysis/analysis.list?&skinType=stock_good)에서 나온 상향 데이터 `MySQL`에 수집(`2022-01-01` ~ ) `main1/DataCollect.ipynb`
     - `MySQL`의 접근 ID, PW, DB_NAME 등은 `main1/mysql_info.py`에 별도로 넣을 공간을 만들어뒀습니다.
     - 만드는 테이블은 2개로, `reports` 와 `companies`로 구현했습니다. `main1/mysql.sql`에 테이블을 만드는 쿼리를 적어뒀습니다.
-    - 수집 결과
+
+2. 수집 결과(`main1/DataProcessing.ipynb`)
     1. `companies` 테이블  
     ![](images/companies_sql.PNG)  
 
@@ -29,4 +31,3 @@
 
 ### 기타 등등..
 - 프로젝트 진행 기간 : `220803 ~ 220811`
-- 나름 길게 작업했다고 생각했는데, 적어놓고 보니까 너무 짧은데..?
