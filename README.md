@@ -7,10 +7,10 @@
     - 만드는 테이블은 2개로, `reports` 와 `companies`로 구현했습니다. `main1/mysql.sql`에 테이블을 만드는 쿼리를 적어뒀습니다.
 
 - 수집 결과
-    1. `companies` 테이블  
+    1. `companies` 테이블  (`pk : 회사 이름(company)`)
     ![](images/companies_sql.PNG)  
 
-    2. `reports` 테이블  
+    2. `reports` 테이블  (`pk : 레포트 번호(reports_idx)`)
     ![](images/reports.PNG)  
 
 2. 수집 데이터 조회 및 시각화(`main1/DataProcessing.ipynb`)
