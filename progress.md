@@ -20,6 +20,9 @@
 ## 일자별 진행 과정 
 - 진행 기간 : `220803 ~ 220811`
 
+### 220817
+1. 셀레늄 `Headless` 옵션 추가
+
 ### 220811
 1. `DataCollect.ipynb` - 첫 날짜 찾기 : `df.iloc[rows][cols]`로 수정
 2. 처음 db, 테이블 생성코드를 `DataCollect.ipynb`에 넣음
