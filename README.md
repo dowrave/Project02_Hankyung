@@ -6,6 +6,8 @@
 
 ## 필요
 - [MySQL 커뮤니티 버전](https://dev.mysql.com/downloads/mysql/)
+    - 설치 & sqlite 접속 id, 비밀번호를 만든 뒤에는 `mysql_info.py`에 해당 정보들을 입력하면 바로 실행되도록 만들었습니다.
+    - 테이블은 `mysql.sql` 파일의 쿼리로 만들었습니다.
 - [크롬 드라이버](https://chromedriver.chromium.org/downloads)
 - 패키지는 `requirements.txt` 참조
     - 메인 : `pandas`, `pymysql`, `matplotlib`, `seaborn`, `selenium`, `bs4`
@@ -33,4 +35,4 @@
 
 
 ### 기타 등등..
-- 프로젝트 진행 기간 : `220803 ~ 220811`
+- 프로젝트 진행 기간 : `220803 ~ 220811` + `220817`, `220819`
