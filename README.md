@@ -12,6 +12,14 @@
 - 패키지는 `requirements.txt` 참조
     - 메인 : `pandas`, `pymysql`, `matplotlib`, `seaborn`, `selenium`, `bs4`
 
+## 실행
+1. `MySQL` 설치 시 입력한 유저 이름과 비밀번호를 `mysql_info.py`에 입력
+2. `main1/DataCollect.py` 실행 
+    - `MySQL`에 데이터가 없다면 `2022-01-01`부터 오늘까지의 데이터를 수집
+    - 데이터가 있다면 `reports` 테이블의 가장 최근 보고서 다음 날부터 데이터 수집
+3. `main1/DataProcessing.py` 실행
+    - 기본 `2022-01-01`부터 상향 보고서가 많이 나온 산업 별로 조회
+    - 상위 n개 산업에 대해 어떤 기업들의 상향 보고서가 몇 개이며, 어떤 달에 나왔는지를 조회
 
 ## 프로젝트 내용
 1. 데이터 수집(`main1/DataCollect.ipynb`)

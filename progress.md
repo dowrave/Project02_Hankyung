@@ -26,6 +26,7 @@
     - 시각화 과정은 그 뒤라서 판다스로 불러온 뒤는 동일할 거니까 더 이상 진행하진 않음
     - 불러온 데이터는 `HKreports.db`에 저장됨(220801부터 수집)
 3. 파일 정리 : `DataCollect.py`, `DataProcessing.py`, `mysql_info.py`, `mysql.sql` 4개의 파일만 깃에 남겨놓음
+
 ### 220817
 1. 셀레늄 `Headless` 옵션 추가
 2. `sqlite3`으로도 저장해보자
