@@ -116,7 +116,7 @@ def CollectDatas():
     opt.add_argument('headless')
     
     with conn.cursor() as curs:
-        with webdriver.Chrome('../chromedriver.exe', chrome_options = opt) as driver:
+        with webdriver.Chrome('./chromedriver.exe', chrome_options = opt) as driver:
             driver.implicitly_wait(2)
             
             # print("시작 날짜 : ", start_date, "오늘 날짜 : ", today)
