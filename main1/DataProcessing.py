@@ -174,7 +174,7 @@ def ShowGraphs(n = 3): # n개 분야의 그래프를 보여준다
 if __name__ == "__main__":
     
     # 지금부터 n주 전까지 데이터 조회
-    reports_df, companies_df, start_date, end_date = ReadPreviousWeeks(weeks = 15,
+    reports_df, companies_df, start_date, end_date = ReadPreviousWeeks(weeks = 16,
                                                                 read_all = False)
     processing_df(reports_df, companies_df)
     total_df = merge_df(reports_df, companies_df)
