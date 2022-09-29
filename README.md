@@ -7,20 +7,23 @@
 
 ## 필요
 - [MySQL 커뮤니티 버전](https://dev.mysql.com/downloads/mysql/)
-    - 설치 & sqlite 접속 id, 비밀번호를 만든 뒤에는 `mysql_info.py`에 해당 정보들을 입력하면 바로 실행되도록 만들었습니다.
     - 테이블은 `mysql.sql` 파일의 쿼리로 만들었습니다.
 - [크롬 드라이버](https://chromedriver.chromium.org/downloads)
 - 패키지는 `requirements.txt` 참조
-    - 메인 : `pandas`, `pymysql`, `matplotlib`, `seaborn`, `selenium`, `bs4`
+- 메인 : `pandas`, `pymysql`, `matplotlib`, `seaborn`, `selenium`, `bs4`
 
-## 실행
-1. `MySQL` 설치 시 입력한 유저 이름과 비밀번호를 `mysql_info.py`에 입력
-2. `main1/DataCollect.py` 실행 
-    - `MySQL`에 데이터가 없다면 `2022-01-01`부터 오늘까지의 데이터를 수집
-    - 데이터가 있다면 `reports` 테이블의 가장 최근 보고서 다음 날부터 데이터 수집
-3. `main1/DataProcessing.py` 실행
-    - 기본 `2022-01-01`부터 상향 보고서가 많이 나온 산업 별로 조회
-    - 상위 n개 산업에 대해 어떤 기업들의 상향 보고서가 몇 개이며, 어떤 달에 나왔는지를 조회
+<details>
+<summary><h2>실행</h2></summary>  
+
+1. `MySQL` 설치 시 입력한 유저 이름과 비밀번호를 `mysql_info.py`에 입력 </br>
+2. `main1/DataCollect.py` 실행 </br>
+    - `MySQL`에 데이터가 없다면 `2022-01-01`부터 오늘까지의 데이터를 수집 </br>
+    - 데이터가 있다면 `reports` 테이블의 가장 최근 보고서 다음 날부터 데이터 수집</br>
+3. `main1/DataProcessing.py` 실행</br>
+    - 기본 `2022-01-01`부터 상향 보고서가 많이 나온 산업 별로 조회</br>
+    - 상위 n개 산업에 대해 어떤 기업들의 상향 보고서가 몇 개이며, 어떤 달에 나왔는지를 조회</br>
+
+</details>
 
 ## 내용
 1. 데이터 수집(`main1/DataCollect.ipynb`)
