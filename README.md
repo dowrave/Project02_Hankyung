@@ -9,7 +9,6 @@
 - [MySQL 커뮤니티 버전](https://dev.mysql.com/downloads/mysql/)
     - 테이블은 `mysql.sql` 파일의 쿼리로 만들었습니다.
 - [크롬 드라이버](https://chromedriver.chromium.org/downloads)
-- 패키지는 `requirements.txt` 참조
 - 메인 : `pandas`, `pymysql`, `matplotlib`, `seaborn`, `selenium`, `bs4`
 
 <details>
@@ -40,9 +39,9 @@
 2. 수집 데이터 조회 및 시각화(`main1/DataProcessing.ipynb`)
 - 수집된 데이터를 바탕으로 n주일 전부터 오늘까지의 데이터를 취합 & 산업과 기업별로 시각화 
     - 1. 산업별 시각화  
-        ![](images/categories.png)
+        ![](images/Figure_1.png)
     - 2. 기업별 시각화  
-        ![](images/companies.png)
+        ![](images/Figure_2.png)
         
 ## 후기
 1. `SQL`의 활용을 조금 더 잘해볼 수 있지 않을까라는 생각이 들었습니다. 주로 `Pandas`를 쓰게 되었는데, 여기서 SQL이 한 역할은 `데이터 저장 공간` 정도가 전부였기 때문입니다. 
