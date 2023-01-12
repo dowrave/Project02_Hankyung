@@ -160,6 +160,8 @@ def ShowGraphs(n = 3): # n개 분야의 그래프를 보여준다
                         yticklabels = True) # 모든 데이터를 보여주기 위해 넣음
         g2.set(title = f"월 단위 {category_lst.index[i]} 산업의 상향 보고서 수")
         g2.set(xlabel = None)
+        g2.set()
+        g2.set_yticklabels(g2.get_yticklabels(), rotation = 0)
         
         # 0 데이터 제외하기
         for t in ax[i][1].texts:
